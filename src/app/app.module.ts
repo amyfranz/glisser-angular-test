@@ -1,18 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BioComponent } from './bio/bio.component';
+import { EditFormComponent } from './edit-form/edit-form.component';
+import { EditNameComponent } from './edit-name/edit-name.component';
+import { EditBioComponent } from './edit-bio/edit-bio.component';
+import { FormsModule } from '@angular/forms';
+import { EditFormService } from './services/edit-form.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    BioComponent,
+    EditFormComponent,
+    EditNameComponent,
+    EditBioComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, FontAwesomeModule, FormsModule],
+  providers: [EditFormService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

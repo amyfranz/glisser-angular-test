@@ -1,0 +1,11 @@
+<form #newEditForm="ngForm" (ngSubmit)="onFormSubmit(newEditForm.value)">
+  <textarea
+    class="popup-textarea"
+    type="text"
+    placeholder="bio"
+    name="bio"
+    required
+    [(ngModel)]="bio"
+  ></textarea>
+  <button class="ok" type="submit">Ok</button>
+</form>

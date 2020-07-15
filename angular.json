@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "glisser-angular-test"
+    }
+  },
+  "defaultProject": "glisser-angular-test",
+  "cli": {
+    "analytics": "92ebc6e0-3e1a-4c6c-a883-06d3e0fd5d1f"
+  }
 }

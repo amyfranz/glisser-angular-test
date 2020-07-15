@@ -1,0 +1,10 @@
+<div class="popup">
+  <span class="close" (click)="onFormExit()">x</span>
+  <h2>Edit your {{ editing }}</h2>
+  <app-edit-name
+    *ngIf="editing == 'details'"
+    [firstName]="firstName"
+    [lastName]="lastName"
+  ></app-edit-name>
+  <app-edit-bio *ngIf="editing == 'bio'" [bio]="bio"></app-edit-bio>
+</div>

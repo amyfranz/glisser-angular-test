@@ -1,0 +1,21 @@
+* {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.blur {
+  filter: blur(2px);
+  overflow: hidden;
+}
